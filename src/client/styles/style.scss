@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+$font: 'Open Sans', sans-serif;
+
+.header{
+  width: 100vw;
+  height: 120px;
+  background-color: #f4f;
+  &__body{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+  }
+  &__logo{
+    height: 40px;
+  }
+}
+
+.about{
+  color: #fff;
+  font-family: $font;
+  &__body{
+    width: 100vw;
+    height: 700px;
+    background-image: url(https://image.freepik.com/free-photo/black-background-red-coffee-cup-note-pad-alarm-clock-flower-diary-scores-keyboard-empty-space-desktop_96727-1267.jpg);
+    background-size: cover;
+    background-position: center center;
+    filter: grayscale(100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__text{
+    font-size: 3rem;
+    width: 70%;
+    text-align: center;
+    line-height: 1.5em;
+  }
+  &__button-order{
+    font-size: 1.3rem;
+    width: 100px;
+    height: 30px;
+    background-color: #ff6400;
+  }
+}
