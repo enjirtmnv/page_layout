@@ -5,38 +5,38 @@ html(lang="en")
     body
         header.header
             div.header__body
-                a.header__logo-box
+                a(href='#' onclick="return false;").header__logo-container
                     img.header__logo(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Exz3S32WO1gsZextNsbJQtPttIcmQbOhLu7X_SJP8Ja7AWw&s" alt="logo")
-                nav.item-nav
-                    a.item-nav__news Новости
-                    a.item-nav__projects Проекты
-                    a.item-nav__contacts Контакты
-                a.header__telephone 8(888)888-88-88
+                div.header__nav
+                    nav.item-nav
+                        a(href='#' onclick="return false;").item-nav__news Новости
+                        a(href='#' onclick="return false;").item-nav__projects Проекты
+                        a(href='#' onclick="return false;").item-nav__contacts Контакты
+                    a(href='#' onclick="return false;").header__telephone 8(888)888-88-88
         div.about
             div.about__body
-                h1.about__text Лидер в разработке интегрированных и высоконагруженных интерент-решений
-                a.about__button-order Заказать
+                h1.about__title Лидер в разработке интегрированных и высоконагруженных интерент-решений
+                a(href='#').about__button-order Заказать
         main.news
             div.news__body
-                h2.news__p Новости
+                h2.news__title Новости
                 div.news__row
                     div.news__column
                         div.item-news
-                            div.item-news__pic
-                                img(src="https://digitaldefynd.com/wp-content/uploads/2018/12/best-marketing-analytics-course-class-certification-training-online.jpg", alt="note")
+                            img.item-news__pic(src="https://digitaldefynd.com/wp-content/uploads/2018/12/best-marketing-analytics-course-class-certification-training-online.jpg", alt="note")
                             h3.item-news__title Разработка самого крупного портала на Битриксе в России
                             p.item-news__text Смотрите видео и читайте наш новый кейс о том, как мы объединили на одной платформе сотрудников с производства иофиса Новолипецкого металлургическкого комбината
+                    div.news__column
                         div.item-news
-                            div.item-news__pic
-                                img(src="https://c.pxhere.com/images/1b/e0/1b5d05a65a4d0b216f45fe020de8-1437383.jpg!d", alt="note")
+                            img.item-news__pic(src="https://c.pxhere.com/images/cd/81/b9e15a22607016d53e0926cb5aa4-1448605.jpg!d", alt="note")
                             h3.item-news__title Как выбрать ИТ-платформу для интернет-магазина
                             p.item-news__text Об этом сегодня расскажет генеральный директор QSOFT Виталий Чесноков в школе электроннрй коммерции iWENGO
+                    div.news__column
                         div.item-news
-                            div.item-news__pic
-                                img(src="https://image.freepik.com/free-photo/_1423-1756.jpg", alt="note")
+                            img.item-news__pic(src="https://image.freepik.com/free-photo/_1423-1756.jpg", alt="note")
                             h3.item-news__title Мы участвуем в выставке ECOM Expo и угощаем кофе
-                            p.item-news__text Выступили с докладом про цифровую трансформацию клиентского сервиса. В ходк доклада были затронуты вопросы построения единой эко-системы для повышения эффективности работы с конечным клиентом.
+                            p.item-news__text Выступили с докладом про цифровую трансформацию клиентского сервиса. В ходе доклада были затронуты вопросы построения единой эко-системы для повышения эффективности работы с конечным клиентом.
         footer.footer
             div.footer__body
                 span.footer__text &#64 QSOFT,2019 Работает на 1С-Битрикс: Управление сайтом, Политика конфиденциальности
-                a.footer__button-subscribe Подписаться
+                a(href='#' onclick="return false;").footer__button-subscribe Подписаться

@@ -1,48 +1,203 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 $font: 'Open Sans', sans-serif;
+$margin-nav: 1em;
+$hover-color-nav: #e4263e;
+$inner-body-width: 60%;
+$h1-font-size: 2.5rem;
+$h2-font-size: 1.7rem;
+$h3-font-size: 1.2rem;
+
+body{
+  width: 100vw;
+}
+
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-white{
+  font-family: $font;
+  color: #fff;
+}
+
+.font-black{
+  font-family: $font;
+  color: #000;
+}
+
+.button{
+  width: 12em;
+  height: 3em;
+  background-color: #ff5c00;
+  border-radius: 0.2em;
+  @extend .flex-center;
+  text-decoration: none;
+  &:hover{
+    background-color: dodgerblue;
+  }
+}
 
 .header{
-  width: 100vw;
+  width: 100%;
   height: 120px;
-  background-color: #f4f;
+  background-color: #fff;
   &__body{
-    width: 80%;
+    width: $inner-body-width;
     height: 100%;
     margin: 0 auto;
-    background-color: #ccc;
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    font-family: $font;
+    color: #000;
   }
   &__logo{
     height: 40px;
   }
+  &__nav{
+    display: flex;
+    flex-direction: row;
+  }
+  &__telephone{
+    margin: 0 0 0 5em;
+    text-decoration: none;
+    &:hover{
+      color: $hover-color-nav;
+    }
+  }
+}
+
+.item-nav{
+  color: #000;
+  &__news{
+    text-decoration: none;
+    margin: 0 $margin-nav;
+    &:hover{
+      color: $hover-color-nav;
+    }
+  }
+  &__projects{
+    text-decoration: none;
+    margin: 0 $margin-nav;
+    &:hover{
+      color: $hover-color-nav;
+    }
+  }
+  &__contacts{
+    text-decoration: none;
+    margin: 0 $margin-nav;
+    &:hover{
+      color: $hover-color-nav;
+    }
+  }
 }
 
 .about{
-  color: #fff;
-  font-family: $font;
+  @extend .font-white;
   &__body{
-    width: 100vw;
-    height: 700px;
-    background-image: url(https://image.freepik.com/free-photo/black-background-red-coffee-cup-note-pad-alarm-clock-flower-diary-scores-keyboard-empty-space-desktop_96727-1267.jpg);
+    width: 100%;
+    height: 550px;
+    background-image: url(https://800satcenter.com/wp-content/uploads/2020/01/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg);
     background-size: cover;
     background-position: center center;
-    filter: grayscale(100%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @extend .flex-center;
     flex-direction: column;
   }
-  &__text{
-    font-size: 3rem;
+  &__title{
+    font-size: $h1-font-size;
     width: 70%;
     text-align: center;
     line-height: 1.5em;
+    margin: 0 0 1.5em 0;
   }
   &__button-order{
     font-size: 1.3rem;
-    width: 100px;
-    height: 30px;
-    background-color: #ff6400;
+    @extend .button;
   }
 }
+
+.news{
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  &__body{
+    width: $inner-body-width;
+    height: 100%;
+    margin: 0 auto;
+  }
+  &__title{
+    font-size: $h2-font-size;
+    text-align: center;
+    margin: 50px 0;
+    @extend .font-black;
+  }
+  &__row{
+    display: flex;
+    padding: 0 0 60px 0;
+  }
+  &__column{
+    flex-basis: 33%;
+    justify-content: space-between;
+    &:nth-child(2){
+      margin: 0 40px;
+    }
+  }
+}
+
+.item-news{
+  &__pic{
+    max-width:100%;
+    height:auto;
+  }
+  &__title{
+    font-size: $h3-font-size;
+    text-align: left;
+    margin: 0.3em 0.6em;
+    line-height: 1.5em;
+    position: relative;
+    @extend .font-black;
+    &:after{
+      content: '';
+      position: absolute;
+      width: 4em;
+      bottom: -0.7em;
+      height: 3px;
+      background-color: #81161b;
+      left: 0;
+      //margin: 20px 0 0 0;
+    }
+  }
+  &__text{
+    margin: 1.5em 0.6em 0.3em 0.6em;
+    line-height: 1.5em;
+    font-size: 1rem;
+    @extend .font-black;
+  }
+}
+
+.footer{
+  @extend .font-white;
+  width: 100%;
+  height: 100px;
+  background-image: url(https://800satcenter.com/wp-content/uploads/2020/01/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  &__body{
+    width: $inner-body-width;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__text{
+    font-size: 0.8rem;
+  }
+  &__button-subscribe{
+    font-size: 1rem;
+    @extend .button;
+  }
+}
+
