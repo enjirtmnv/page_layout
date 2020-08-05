@@ -10,7 +10,7 @@ $h3-font-size: 1.2rem;
 
 body{
   width: 100vw;
-  
+
 }
 
 .flex-center{
@@ -38,6 +38,9 @@ body{
   text-decoration: none;
   &:hover{
     background-color: dodgerblue;
+  }
+  &:link{
+    color: inherit;
   }
 }
 
@@ -68,6 +71,9 @@ body{
     &:hover{
       color: $hover-color-nav;
     }
+    &:link{
+      color: inherit;
+    }
   }
 }
 
@@ -79,6 +85,9 @@ body{
     &:hover{
       color: $hover-color-nav;
     }
+    &:link{
+      color: inherit;
+    }
   }
   &__projects{
     text-decoration: none;
@@ -86,12 +95,18 @@ body{
     &:hover{
       color: $hover-color-nav;
     }
+    &:link{
+      color: inherit;
+    }
   }
   &__contacts{
     text-decoration: none;
     margin: 0 $margin-nav;
     &:hover{
       color: $hover-color-nav;
+    }
+    &:link{
+      color: inherit;
     }
   }
 }

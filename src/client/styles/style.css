@@ -38,7 +38,7 @@ table {
   border-spacing: 0;
 }
 
-a:visited, a:link {
+a:visited {
   color: inherit;
 }
 
@@ -72,6 +72,9 @@ body {
 .button:hover, .footer__button-subscribe:hover, .about__button-order:hover {
   background-color: dodgerblue;
 }
+.button:link, .footer__button-subscribe:link, .about__button-order:link {
+  color: inherit;
+}
 
 .header {
   width: 100%;
@@ -102,6 +105,9 @@ body {
 .header__telephone:hover {
   color: #e4263e;
 }
+.header__telephone:link {
+  color: inherit;
+}
 
 .item-nav {
   color: #000;
@@ -113,6 +119,9 @@ body {
 .item-nav__news:hover {
   color: #e4263e;
 }
+.item-nav__news:link {
+  color: inherit;
+}
 .item-nav__projects {
   text-decoration: none;
   margin: 0 1em;
@@ -120,12 +129,18 @@ body {
 .item-nav__projects:hover {
   color: #e4263e;
 }
+.item-nav__projects:link {
+  color: inherit;
+}
 .item-nav__contacts {
   text-decoration: none;
   margin: 0 1em;
 }
 .item-nav__contacts:hover {
   color: #e4263e;
+}
+.item-nav__contacts:link {
+  color: inherit;
 }
 
 .about__body {
