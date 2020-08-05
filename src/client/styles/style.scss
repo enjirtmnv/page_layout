@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import "resets";
 $font: 'Open Sans', sans-serif;
-$margin-nav: 1em;
-$hover-color-nav: #e4263e;
 $inner-body-width: 60%;
 $h1-font-size: 2.5rem;
 $h2-font-size: 1.7rem;
@@ -43,9 +41,9 @@ body{
 
 .item-nav-styles{
   text-decoration: none;
-  margin: 0 $margin-nav;
+  margin: 0 1em;
   &:hover{
-    color: $hover-color-nav;
+    color: #e4263e;
   }
 }
 
@@ -74,7 +72,7 @@ body{
     margin: 0 0 0 5em;
     text-decoration: none;
     &:hover{
-      color: $hover-color-nav;
+      color: #e4263e;
     };
   }
 }
