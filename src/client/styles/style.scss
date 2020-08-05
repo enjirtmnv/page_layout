@@ -39,8 +39,13 @@ body{
   &:hover{
     background-color: dodgerblue;
   }
-  &:link{
-    color: inherit;
+}
+
+.item-nav-styles{
+  text-decoration: none;
+  margin: 0 $margin-nav;
+  &:hover{
+    color: $hover-color-nav;
   }
 }
 
@@ -70,44 +75,20 @@ body{
     text-decoration: none;
     &:hover{
       color: $hover-color-nav;
-    }
-    &:link{
-      color: inherit;
-    }
+    };
   }
 }
 
 .item-nav{
   color: #000;
   &__news{
-    text-decoration: none;
-    margin: 0 $margin-nav;
-    &:hover{
-      color: $hover-color-nav;
-    }
-    &:link{
-      color: inherit;
-    }
+    @extend .item-nav-styles;
   }
   &__projects{
-    text-decoration: none;
-    margin: 0 $margin-nav;
-    &:hover{
-      color: $hover-color-nav;
-    }
-    &:link{
-      color: inherit;
-    }
+    @extend .item-nav-styles;
   }
   &__contacts{
-    text-decoration: none;
-    margin: 0 $margin-nav;
-    &:hover{
-      color: $hover-color-nav;
-    }
-    &:link{
-      color: inherit;
-    }
+    @extend .item-nav-styles;
   }
 }
 
