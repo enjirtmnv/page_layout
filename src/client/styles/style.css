@@ -38,7 +38,7 @@ table {
   border-spacing: 0;
 }
 
-a:visited {
+a:visited, a:link {
   color: inherit;
 }
 
