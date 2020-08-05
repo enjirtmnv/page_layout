@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+/* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a:visited {
+  color: inherit;
+}
+
+body {
+  width: 100vw;
+}
+
+.flex-center, .about__body, .button, .footer__button-subscribe, .about__button-order {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-white, .footer, .about {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+}
+
+.font-black, .item-news__text, .item-news__title, .news__title {
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+
+.button, .footer__button-subscribe, .about__button-order {
+  width: 12em;
+  height: 3em;
+  background-color: #ff5c00;
+  border-radius: 0.2em;
+  text-decoration: none;
+}
+.button:hover, .footer__button-subscribe:hover, .about__button-order:hover {
+  background-color: dodgerblue;
+}
+
+.header {
+  width: 100%;
+  height: 120px;
+  background-color: #fff;
+}
+.header__body {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
+}
+.header__logo {
+  height: 40px;
+}
+.header__nav {
+  display: flex;
+  flex-direction: row;
+}
+.header__telephone {
+  margin: 0 0 0 5em;
+  text-decoration: none;
+}
+.header__telephone:hover {
+  color: #e4263e;
+}
+
+.item-nav {
+  color: #000;
+}
+.item-nav__news {
+  text-decoration: none;
+  margin: 0 1em;
+}
+.item-nav__news:hover {
+  color: #e4263e;
+}
+.item-nav__projects {
+  text-decoration: none;
+  margin: 0 1em;
+}
+.item-nav__projects:hover {
+  color: #e4263e;
+}
+.item-nav__contacts {
+  text-decoration: none;
+  margin: 0 1em;
+}
+.item-nav__contacts:hover {
+  color: #e4263e;
+}
+
+.about__body {
+  width: 100%;
+  height: 550px;
+  background-image: url(https://800satcenter.com/wp-content/uploads/2020/01/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg);
+  background-size: cover;
+  background-position: center center;
+  flex-direction: column;
+}
+.about__title {
+  font-size: 2.5rem;
+  width: 70%;
+  text-align: center;
+  line-height: 1.5em;
+  margin: 0 0 1.5em 0;
+}
+.about__button-order {
+  font-size: 1.3rem;
+}
+
+.news {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.news__body {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+}
+.news__title {
+  font-size: 1.7rem;
+  text-align: center;
+  margin: 50px 0;
+}
+.news__row {
+  display: flex;
+  padding: 0 0 60px 0;
+}
+.news__column {
+  flex-basis: 33%;
+  justify-content: space-between;
+}
+.news__column:nth-child(2) {
+  margin: 0 40px;
+}
+
+.item-news__pic {
+  max-width: 100%;
+  height: auto;
+}
+.item-news__title {
+  font-size: 1.2rem;
+  text-align: left;
+  margin: 0.3em 0.6em;
+  line-height: 1.5em;
+  position: relative;
+}
+.item-news__title:after {
+  content: "";
+  position: absolute;
+  width: 4em;
+  bottom: -0.7em;
+  height: 3px;
+  background-color: #81161b;
+  left: 0;
+}
+.item-news__text {
+  margin: 1.5em 0.6em 0.3em 0.6em;
+  line-height: 1.5em;
+  font-size: 1rem;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-image: url(https://800satcenter.com/wp-content/uploads/2020/01/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg);
+  background-size: cover;
+  background-position: center bottom;
+}
+.footer__body {
+  width: 60%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer__text {
+  font-size: 0.8rem;
+}
+.footer__button-subscribe {
+  font-size: 1rem;
+}
+
+/*# sourceMappingURL=style.css.map */
