@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-@import "resets";
+@import "normalize.css";
 $font: 'Open Sans', sans-serif;
 $inner-body-width: 60%;
 $h1-font-size: 2.5rem;
@@ -15,11 +15,6 @@ body{
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.font-white{
-  font-family: $font;
-  color: #fff;
 }
 
 .font-black{
@@ -40,6 +35,7 @@ body{
 }
 
 .item-nav-styles{
+  color: #000;
   text-decoration: none;
   margin: 0 1em;
   &:hover{
@@ -59,7 +55,6 @@ body{
     align-items: center;
     justify-content: space-between;
     font-family: $font;
-    color: #000;
   }
   &__logo{
     height: 40px;
@@ -69,16 +64,16 @@ body{
     flex-direction: row;
   }
   &__telephone{
+    color: #000;
     margin: 0 0 0 5em;
     text-decoration: none;
     &:hover{
       color: #e4263e;
-    };
+    }
   }
 }
 
 .item-nav{
-  color: #000;
   &__news{
     @extend .item-nav-styles;
   }
@@ -91,7 +86,7 @@ body{
 }
 
 .about{
-  @extend .font-white;
+  font-family: $font;
   &__body{
     width: 100%;
     height: 550px;
@@ -102,6 +97,7 @@ body{
     flex-direction: column;
   }
   &__title{
+    color: #fff;
     font-size: $h1-font-size;
     width: 70%;
     text-align: center;
@@ -109,6 +105,7 @@ body{
     margin: 0 0 1.5em 0;
   }
   &__button-order{
+    color: #fff;
     font-size: 1.3rem;
     @extend .button;
   }
@@ -174,12 +171,12 @@ body{
 }
 
 .footer{
-  @extend .font-white;
   width: 100%;
   height: 100px;
   background-image: url(https://800satcenter.com/wp-content/uploads/2020/01/top-view-dark-stylish-workplace-with-smartphone-office-supplies_67155-2963.jpg);
   background-size: cover;
   background-position: center bottom;
+  font-family: $font;
   &__body{
     width: $inner-body-width;
     height: 100%;
@@ -190,8 +187,10 @@ body{
   }
   &__text{
     font-size: 0.8rem;
+    color: #fff;
   }
   &__button-subscribe{
+    color: #fff;
     font-size: 1rem;
     @extend .button;
   }

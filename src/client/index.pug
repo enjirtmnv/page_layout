@@ -12,14 +12,14 @@ html(lang="en")
                     img.header__logo(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Exz3S32WO1gsZextNsbJQtPttIcmQbOhLu7X_SJP8Ja7AWw&s" alt="logo")
                 div.header__nav
                     nav.item-nav
-                        a(href='#' onclick="return false;").item-nav__news Новости
-                        a(href='#' onclick="return false;").item-nav__projects Проекты
-                        a(href='#' onclick="return false;").item-nav__contacts Контакты
-                    a(href='#' onclick="return false;").header__telephone 8(888)888-88-88
+                        a.item-nav__news(href='#' onclick="return false") Новости
+                        a.item-nav__projects(href='#' onclick="return false") Проекты
+                        a.item-nav__contacts(href='#' onclick="return false") Контакты
+                    a.header__telephone(href='#' onclick="return false") 8(888)888-88-88
         div.about
             div.about__body
                 h1.about__title Лидер в разработке интегрированных и высоконагруженных интерент-решений
-                a(href='#').about__button-order Заказать
+                a.about__button-order(href='#' onclick="return false") Заказать
         main.news
             div.news__body
                 h2.news__title Новости
@@ -42,4 +42,4 @@ html(lang="en")
         footer.footer
             div.footer__body
                 span.footer__text &#64 QSOFT,2019 Работает на 1С-Битрикс: Управление сайтом, Политика конфиденциальности
-                a(href='#' onclick="return false;").footer__button-subscribe Подписаться
+                a.footer__button-subscribe(href='#' onclick="return false;") Подписаться
