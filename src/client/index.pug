@@ -3,27 +3,27 @@ html(lang="en")
     head
         title QSOFT
         meta(charset='UTF-8')
-        meta(name='viewport' content='width=device-width, initial scale=1.0')
-        link(rel='stylesheet' type='text/css' href='styles/style.css')
+        meta(name='viewport' content='width=device-width')
+        link(rel='stylesheet' type='text/css' href='styles/style-adaptive.css')
     body
         header.header
             div.header__body
-                a(href='#' onclick="return false;").header__logo-container
+                a(href='#' onclick="return false;")
                     img.header__logo(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-Exz3S32WO1gsZextNsbJQtPttIcmQbOhLu7X_SJP8Ja7AWw&s" alt="logo")
-                div.header__nav
-                    nav.item-nav
-                        a.item-nav__news(href='#' onclick="return false") Новости
-                        a.item-nav__projects(href='#' onclick="return false") Проекты
-                        a.item-nav__contacts(href='#' onclick="return false") Контакты
-                    a.header__telephone(href='#' onclick="return false") 8(888)888-88-88
+                div.header__nav.nav
+                    nav.nav__links
+                        a.nav__link_box.nav__link_style(href='#' onclick="return false") Новости
+                        a.nav__link_box.nav__link_style(href='#' onclick="return false") Проекты
+                        a.nav__link_box.nav__link_style(href='#' onclick="return false") Контакты
+                    a.nav__telephone.nav__link_style(href='#' onclick="return false") 8(888)888-88-88
         div.about
             div.about__body
                 h1.about__title Лидер в разработке интегрированных и высоконагруженных интернет-решений
-                a.about__button-order(href='#' onclick="return false") Заказать
+                a.about__button-order.button-style(href='#' onclick="return false") Заказать
         main.news
             div.news__body
-                h2.news__title Новости
-                div.news__row
+                h2.news__title.font-text Новости
+                div.news__row.font-text
                     div.news__column
                         div.item-news
                             img.item-news__pic(src="https://digitaldefynd.com/wp-content/uploads/2018/12/best-marketing-analytics-course-class-certification-training-online.jpg", alt="note")
@@ -42,4 +42,4 @@ html(lang="en")
         footer.footer
             div.footer__body
                 span.footer__text &#64 QSOFT,2019 Работает на 1С-Битрикс: Управление сайтом, Политика конфиденциальности
-                a.footer__button-subscribe(href='#' onclick="return false;") Подписаться
+                a.footer__button-subscribe.button-style(href='#' onclick="return false;") Подписаться

@@ -6,6 +6,12 @@ $h1-font-size: 2.5rem;
 $h2-font-size: 1.7rem;
 $h3-font-size: 1.2rem;
 
+$inner-body-laptop-L: 1440px;
+$inner-body-laptop: 1024px;
+$inner-body-tablet: 768px;
+$inner-body-mobile-L: 425px;
+$inner-body-mobile-S: 320px;
+
 body{
   width: 100vw;
 }
@@ -22,6 +28,12 @@ body{
     align-items: center;
     justify-content: space-between;
     font-family: $font;
+    @media screen and (max-width: $inner-body-laptop-L) {
+      width: 80%;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      width: 90%;
+    }
   }
   &__logo{
     height: 40px;
@@ -40,6 +52,9 @@ body{
       text-decoration: none;
       &:hover{
         color: #e4263e;
+      }
+      @media screen and (max-width: $inner-body-tablet) {
+        display: none;
       }
     }
   }
@@ -60,6 +75,10 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 1.2rem;
+      height: 400px;
+    }
   }
   &__title{
     color: #fff;
@@ -68,9 +87,24 @@ body{
     text-align: center;
     line-height: 1.5em;
     margin: 0 0 1.5em 0;
+    @media screen and (max-width: $inner-body-laptop) {
+      font-size: 2rem;
+    }
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 1.6rem;
+    }
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 1.2rem;
+    }
   }
   &__button-order{
     font-size: 1.3rem;
+    @media screen and (max-width: $inner-body-tablet) {
+      font-size: 1rem;
+    }
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -97,15 +131,27 @@ body{
     width: $inner-body-4K;
     height: 100%;
     margin: 0 auto;
+    @media screen and (max-width: $inner-body-laptop-L) {
+      width: 80%;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      width: 90%;
+    }
   }
   &__title{
     font-size: $h2-font-size;
     text-align: center;
     margin: 2em 0;
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 1.2rem;
+    }
   }
   &__row{
     display: flex;
     padding: 0 0 60px 0;
+    @media screen and (max-width: $inner-body-tablet) {
+      flex-direction: column;
+    }
   }
   &__column{
     flex-basis: 33%;
@@ -113,11 +159,26 @@ body{
     &:nth-child(2){
       margin: 0 40px;
     }
+    @media screen and (max-width: $inner-body-tablet) {
+      flex-basis: 0;
+      text-align: center;
+      &:nth-child(2){
+        margin: 0;
+      }
+    }
   }
 }
 
 .item-news{
   text-align: left;
+  @media screen and (max-width: $inner-body-tablet) {
+    width: 60%;
+    margin: 0 auto 3em auto;
+  }
+  @media screen and (max-width: $inner-body-mobile-L) {
+    margin: 0 auto 2em auto;
+    width: 90%;
+  }
   &__pic{
     max-width:100%;
     height:auto;
@@ -136,11 +197,17 @@ body{
       background-color: #81161b;
       left: 0;
     }
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 1rem;
+    }
   }
   &__text{
     margin: 1.5em 0.6em 0.3em 0.6em;
     line-height: 1.5em;
     font-size: 1rem;
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 0.8rem;
+    }
   }
 }
 
@@ -163,14 +230,26 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media screen and (max-width: $inner-body-laptop-L) {
+      width: 80%;
+    }
+    @media screen and (max-width: $inner-body-laptop) {
+      width: 90%;
+    }
   }
   &__text{
     font-size: 0.8rem;
     color: #fff;
     margin: 0 3em 0 0;
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 0.7rem;
+    }
   }
   &__button-subscribe{
     font-size: 1rem;
     padding: 0 1em;
+    @media screen and (max-width: $inner-body-mobile-L) {
+      font-size: 0.7rem;
+    }
   }
 }
