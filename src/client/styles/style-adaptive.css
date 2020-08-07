@@ -28,7 +28,7 @@ body {
     width: 90%;
   }
 }
-.header__logo {
+.header__logo img {
   height: 40px;
 }
 
@@ -36,23 +36,26 @@ body {
   display: flex;
   flex-direction: row;
 }
-.nav__link_box {
-  margin: 0 1em;
+@media screen and (max-width: 768px) {
+  .nav {
+    display: none;
+  }
 }
 .nav__link_style {
   color: #000;
   text-decoration: none;
+  margin: 0 1em;
 }
-.nav__link_style:hover {
+.nav__link_hover:hover {
   color: #e4263e;
 }
-@media screen and (max-width: 768px) {
-  .nav__link_style {
+.nav__link:last-child {
+  margin: 0 0 0 5em;
+}
+@media screen and (max-width: 1024px) {
+  .nav__link:last-child {
     display: none;
   }
-}
-.nav__telephone {
-  margin: 0 0 0 5em;
 }
 
 .about {
@@ -83,14 +86,20 @@ body {
   line-height: 1.5em;
   margin: 0 0 1.5em 0;
 }
+@media screen and (max-width: 1440px) {
+  .about__title {
+    width: 80%;
+  }
+}
 @media screen and (max-width: 1024px) {
   .about__title {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 }
 @media screen and (max-width: 768px) {
   .about__title {
-    font-size: 1.6rem;
+    font-size: 1.7rem;
+    width: 65%;
   }
 }
 @media screen and (max-width: 425px) {
@@ -144,7 +153,12 @@ body {
 }
 @media screen and (max-width: 1024px) {
   .news__body {
-    width: 90%;
+    width: 50%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .news__body {
+    width: 65%;
   }
 }
 .news__title {
@@ -161,6 +175,11 @@ body {
   display: flex;
   padding: 0 0 60px 0;
 }
+@media screen and (max-width: 1024px) {
+  .news__row {
+    flex-direction: column;
+  }
+}
 @media screen and (max-width: 768px) {
   .news__row {
     flex-direction: column;
@@ -172,6 +191,15 @@ body {
 }
 .news__column:nth-child(2) {
   margin: 0 40px;
+}
+@media screen and (max-width: 1024px) {
+  .news__column {
+    flex-basis: 0;
+    text-align: center;
+  }
+  .news__column:nth-child(2) {
+    margin: 0;
+  }
 }
 @media screen and (max-width: 768px) {
   .news__column {
@@ -185,17 +213,11 @@ body {
 
 .item-news {
   text-align: left;
-}
-@media screen and (max-width: 768px) {
-  .item-news {
-    width: 60%;
-    margin: 0 auto 3em auto;
-  }
+  margin: 0 auto 3em auto;
 }
 @media screen and (max-width: 425px) {
   .item-news {
     margin: 0 auto 2em auto;
-    width: 90%;
   }
 }
 .item-news__pic {
@@ -231,11 +253,6 @@ body {
   .item-news__text {
     font-size: 0.8rem;
   }
-}
-
-.font-text {
-  font-family: "Open Sans", sans-serif;
-  color: #000;
 }
 
 .footer {
