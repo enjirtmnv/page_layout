@@ -139,9 +139,6 @@ body {
   .button-style:hover {
     background-color: #ff5c00;
   }
-  .button-style:active {
-    background-color: #1e90ff;
-  }
 }
 
 .news {
