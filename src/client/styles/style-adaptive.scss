@@ -182,13 +182,6 @@ body{
         margin: 0;
       }
     }
-    @media screen and (max-width: $inner-body-tablet) {
-      flex-basis: 0;
-      text-align: center;
-      &:nth-child(2){
-        margin: 0;
-      }
-    }
   }
 }
 

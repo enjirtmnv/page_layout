@@ -8,6 +8,7 @@ body {
   width: 100%;
   height: 120px;
   background-color: #fff;
+  font-family: "Open Sans", sans-serif;
 }
 .header__body {
   width: 65%;
@@ -16,9 +17,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-family: "Open Sans", sans-serif;
 }
-.header__logo {
+.header__logo img {
   height: 40px;
 }
 
@@ -26,17 +26,15 @@ body {
   display: flex;
   flex-direction: row;
 }
-.nav__link_box {
-  margin: 0 1em;
-}
 .nav__link_style {
   color: #000;
   text-decoration: none;
+  margin: 0 1em;
 }
-.nav__link_style:hover {
+.nav__link_hover:hover {
   color: #e4263e;
 }
-.nav__telephone {
+.nav__link:last-child {
   margin: 0 0 0 5em;
 }
 
@@ -78,13 +76,15 @@ body {
   text-decoration: none;
 }
 .button-style:hover {
-  background-color: dodgerblue;
+  background-color: #1e90ff;
 }
 
 .news {
   width: 100%;
   height: 100%;
   background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  color: #000;
 }
 .news__body {
   width: 65%;
@@ -110,6 +110,7 @@ body {
 
 .item-news {
   text-align: left;
+  margin: 0 auto 3em auto;
 }
 .item-news__pic {
   max-width: 100%;
@@ -134,11 +135,6 @@ body {
   margin: 1.5em 0.6em 0.3em 0.6em;
   line-height: 1.5em;
   font-size: 1rem;
-}
-
-.font-text {
-  font-family: "Open Sans", sans-serif;
-  color: #000;
 }
 
 .footer {

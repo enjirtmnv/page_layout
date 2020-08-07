@@ -208,15 +208,6 @@ body {
     margin: 0;
   }
 }
-@media screen and (max-width: 768px) {
-  .news__column {
-    flex-basis: 0;
-    text-align: center;
-  }
-  .news__column:nth-child(2) {
-    margin: 0;
-  }
-}
 
 .item-news {
   text-align: left;
