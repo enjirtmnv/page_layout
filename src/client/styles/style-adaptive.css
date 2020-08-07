@@ -133,7 +133,15 @@ body {
   text-decoration: none;
 }
 .button-style:hover {
-  background-color: dodgerblue;
+  background-color: #1e90ff;
+}
+@media screen and (max-width: 768px) {
+  .button-style:hover {
+    background-color: #ff5c00;
+  }
+  .button-style:active {
+    background-color: #1e90ff;
+  }
 }
 
 .news {

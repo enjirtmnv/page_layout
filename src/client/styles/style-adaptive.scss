@@ -121,7 +121,16 @@ body{
   justify-content: center;
   text-decoration: none;
   &:hover{
-    background-color: dodgerblue;
+    background-color: #1e90ff;
+
+  }
+  @media screen and (max-width: $inner-body-tablet) {
+    &:hover{
+      background-color: #ff5c00;
+    }
+    &:active{
+      background-color: #1e90ff;
+    }
   }
 }
 
